@@ -1,0 +1,173 @@
+{
+  "tasks": [
+    {
+      "question_id": "1",
+      "text": [
+        "A phone number consists of 7 digits. Determine how many different phone numbers can be formed under the following conditions:",
+        "a. All digits are different.",
+        "b. All digits can be repeated (digits are chosen from 0 to 9).",
+        "c. The first three digits of the phone number are identical."
+      ],
+      "student_solution": {
+        "steps": [
+          "a. 10 * 9 * 8 * 7 * 6 * 5 * 4 = 604,800",
+          "b. 10^7 = 10,000,000",
+          "c. 10^4 = 10,000"
+        ],
+        "calculation": [
+          "a. 10 * 9 * 8 * 7 * 6 * 5 * 4 = 604,800",
+          "b. 10^7 = 10,000,000",
+          "c. 10^4 = 10,000"
+        ],
+        "result": "a. 604,800, b. 10,000,000, c. 10,000",
+        "notes": [],
+        "source_pages": [
+          1
+        ]
+      }
+    },
+    {
+      "question_id": "2",
+      "text": [
+        "An urn contains: Red: 5 marbles. Blue: 6 marbles. Green: 4 marbles. One marble is randomly drawn.",
+        "a. What is the probability of drawing a green marble?",
+        "b. Given that a green marble was drawn, what is the probability that the next marble (drawn without replacement) is blue?",
+        "c. If two marbles are drawn sequentially without replacement, what is the probability that one is red, and the other is blue?"
+      ],
+      "student_solution": {
+        "steps": [
+          "a. P = 4/15 = 0.26 = 26%",
+          "b. 6/14 = 3/7 = 0.428 = 42.8%",
+          "c. (5/15 * 6/14) + (6/15 * 5/14) = 30/210 + 30/210 = 1/7 + 1/7 = 2/7 = 0.2857 = 28.57%"
+        ],
+        "calculation": [
+          "a. P = 4/15 = 0.26 = 26%",
+          "b. 6/14 = 3/7 = 0.428 = 42.8%",
+          "c. (5/15 * 6/14) + (6/15 * 5/14) = 30/210 + 30/210 = 1/7 + 1/7 = 2/7 = 0.2857 = 28.57%"
+        ],
+        "result": "a. 26%, b. 42.8%, c. 28.57%",
+        "notes": [],
+        "source_pages": [
+          2
+        ]
+      }
+    },
+    {
+      "question_id": "3",
+      "text": [
+        "A hospital schedules n = 500 appointments for vaccinations in a month, with a probability p = 0.01 that a patient misses their appointment.",
+        "a. What is the probability that exactly k = 5 patients miss their appointments?",
+        "b. What is the probability that at least k = 10 patients will miss their appointments?"
+      ],
+      "student_solution": {
+        "steps": [
+          "a. k = 5",
+          "b. P(k >= 10) = 1 - P_0 - P_1 - P_2 - P_3 - P_4 - P_5 - P_6 - P_7 - P_8 - P_9",
+          "P_0 = 5^0 * e^-5 / 0! = 0.00673",
+          "P_1 = 5^1 * e^-5 / 1! = 0.03365",
+          "P_2 = 5^2 * e^-5 / 2! = 0.084125",
+          "P_3 = 5^3 * e^-5 / 3! = 0.1404",
+          "P_4 = 5^4 * e^-5 / 4! = 0.1752",
+          "P_5 = 5^5 * e^-5 / 5! = 0.1752",
+          "P_6 = 5^6 * e^-5 / 6! = 0.14605",
+          "P_7 = 5^7 * e^-5 / 7! = 0.10432",
+          "P_8 = 5^8 * e^-5 / 8! = 0.0652",
+          "P_9 = 5^9 * e^-5 / 9! = 0.03622",
+          "P(k >= 10) = 1 - 0.03622 - 0.0652 - 0.10432 - 0.14605 - 0.1752 - 0.1752 - 0.1404 - 0.10432 - 0.0652 - 0.03622 = 0.039835 = 3.98%"
+        ],
+        "calculation": [
+          "a. k = 5",
+          "b. P(k >= 10) = 1 - P_0 - P_1 - P_2 - P_3 - P_4 - P_5 - P_6 - P_7 - P_8 - P_9",
+          "P_0 = 5^0 * e^-5 / 0! = 0.00673",
+          "P_1 = 5^1 * e^-5 / 1! = 0.03365",
+          "P_2 = 5^2 * e^-5 / 2! = 0.084125",
+          "P_3 = 5^3 * e^-5 / 3! = 0.1404",
+          "P_4 = 5^4 * e^-5 / 4! = 0.1752",
+          "P_5 = 5^5 * e^-5 / 5! = 0.1752",
+          "P_6 = 5^6 * e^-5 / 6! = 0.14605",
+          "P_7 = 5^7 * e^-5 / 7! = 0.10432",
+          "P_8 = 5^8 * e^-5 / 8! = 0.0652",
+          "P_9 = 5^9 * e^-5 / 9! = 0.03622",
+          "P(k >= 10) = 1 - 0.03622 - 0.0652 - 0.10432 - 0.14605 - 0.1752 - 0.1752 - 0.1404 - 0.10432 - 0.0652 - 0.03622 = 0.039835 = 3.98%"
+        ],
+        "result": "a. 0.1752, b. 3.98%",
+        "notes": [],
+        "source_pages": [
+          3
+        ]
+      }
+    },
+    {
+      "question_id": "4",
+      "text": [
+        "Solve the following questions:",
+        "a. Calculate the CDF",
+        "b. Find P(4 ≤ X ≤ 8)",
+        "c. Calculate E[X]",
+        "d. Calculate Var[X]"
+      ],
+      "student_solution": {
+        "steps": [
+          "a. P(X) = {P_1 = 0.2 if x=2, P_2 = 0.15 if x=4, P_3 = 0.25 if x=6, P_4 = 0.25 if x=8, P_5 = 0.15 if x=10}",
+          "b. P(4 ≤ X ≤ 8) = P(X=4) + P(X=6) + P(X=8) = 0.15 + 0.25 + 0.25 = 0.65",
+          "c. E(X) = 2*0.2 + 4*0.15 + 6*0.25 + 8*0.25 + 10*0.15 = 0.4 + 0.6 + 1.5 + 2 + 1.5 = 6",
+          "d. Var(X) = E(X^2) - (E(X))^2",
+          "E(X^2) = 2^2*0.2 + 4^2*0.15 + 6^2*0.25 + 8^2*0.25 + 10^2*0.15 = 0.8 + 2.4 + 9 + 16 + 15 = 43.2",
+          "(E(X))^2 = 6^2 = 36",
+          "Var(X) = 43.2 - 36 = 7.2"
+        ],
+        "calculation": [
+          "a. P(X) = {P_1 = 0.2 if x=2, P_2 = 0.15 if x=4, P_3 = 0.25 if x=6, P_4 = 0.25 if x=8, P_5 = 0.15 if x=10}",
+          "b. P(4 ≤ X ≤ 8) = P(X=4) + P(X=6) + P(X=8) = 0.15 + 0.25 + 0.25 = 0.65",
+          "c. E(X) = 2*0.2 + 4*0.15 + 6*0.25 + 8*0.25 + 10*0.15 = 0.4 + 0.6 + 1.5 + 2 + 1.5 = 6",
+          "d. Var(X) = E(X^2) - (E(X))^2",
+          "E(X^2) = 2^2*0.2 + 4^2*0.15 + 6^2*0.25 + 8^2*0.25 + 10^2*0.15 = 0.8 + 2.4 + 9 + 16 + 15 = 43.2",
+          "(E(X))^2 = 6^2 = 36",
+          "Var(X) = 43.2 - 36 = 7.2"
+        ],
+        "result": "a. P(X) = {P_1 = 0.2 if x=2, P_2 = 0.15 if x=4, P_3 = 0.25 if x=6, P_4 = 0.25 if x=8, P_5 = 0.15 if x=10}, b. 0.65, c. 6, d. 7.2",
+        "notes": [],
+        "source_pages": [
+          2
+        ]
+      }
+    },
+    {
+      "question_id": "5",
+      "text": [
+        "Solve the following questions:",
+        "f(x,y) = {4x^2y, 0 ≤ x ≤ 1, 0 ≤ y ≤ 1",
+        "0, otherwise",
+        "a. Verify that f(x,y) is a valid joint PDF",
+        "b. Find P(0.5 ≤ X ≤ 1, 0 ≤ Y ≤ 0.5)",
+        "c. Calculate the marginal PDF of Y",
+        "d. Calculate the expected value E[X]",
+        "e. Find the covariance Cov(X,Y)"
+      ],
+      "student_solution": {
+        "steps": [
+          "a. ∫∫(4x^2y)dydx = ∫(2x^2)dx = 2/3 * x^3 |^1_0 = 2/3 => 0 ≤ 2/3 ≤ 1 => is valid",
+          "b. P(0.5 ≤ X ≤ 1, 0 ≤ Y ≤ 0.5) = ∫∫(4x^2y)dydx = ∫(2x^2)dx = 2/3 * x^3 |^1_0.5 = 7/24 = 0.2916 = 29.16%",
+          "c. E(X) = ∫∫(x * 4x^2y)dydx = ∫(2x^3)dx = 1/2 * x^4 |^1_0 = 1/2 = 0.5 => E(X) = 0.5",
+          "d. E(Y) = ∫∫(y * 4x^2y)dydx = ∫(4/3 * x^3)dx = 1/3 * x^4 |^1_0 = 1/3 => E(Y) = 1/3",
+          "e. E(XY) = ∫∫(xy * 4x^2y)dydx = ∫(4/3 * x^4)dx = 1/5 * x^5 |^1_0 = 1/5 => E(XY) = 1/5",
+          "Cov(X,Y) = E(XY) - E(X) * E(Y) = 1/5 - 1/2 * 1/3 = 1/30 => Cov(X,Y) = 1/30"
+        ],
+        "calculation": [
+          "a. ∫∫(4x^2y)dydx = ∫(2x^2)dx = 2/3 * x^3 |^1_0 = 2/3 => 0 ≤ 2/3 ≤ 1 => is valid",
+          "b. P(0.5 ≤ X ≤ 1, 0 ≤ Y ≤ 0.5) = ∫∫(4x^2y)dydx = ∫(2x^2)dx = 2/3 * x^3 |^1_0.5 = 7/24 = 0.2916 = 29.16%",
+          "c. E(X) = ∫∫(x * 4x^2y)dydx = ∫(2x^3)dx = 1/2 * x^4 |^1_0 = 1/2 = 0.5 => E(X) = 0.5",
+          "d. E(Y) = ∫∫(y * 4x^2y)dydx = ∫(4/3 * x^3)dx = 1/3 * x^4 |^1_0 = 1/3 => E(Y) = 1/3",
+          "e. E(XY) = ∫∫(xy * 4x^2y)dydx = ∫(4/3 * x^4)dx = 1/5 * x^5 |^1_0 = 1/5 => E(XY) = 1/5",
+          "Cov(X,Y) = E(XY) - E(X) * E(Y) = 1/5 - 1/2 * 1/3 = 1/30 => Cov(X,Y) = 1/30"
+        ],
+        "result": "a. is valid, b. 29.16%, c. E(X) = 0.5, d. E(Y) = 1/3, e. Cov(X,Y) = 1/30",
+        "notes": [],
+        "source_pages": [
+          2,
+          3
+        ]
+      }
+    }
+  ]
+}

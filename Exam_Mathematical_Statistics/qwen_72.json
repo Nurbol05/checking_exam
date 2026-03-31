@@ -1,0 +1,214 @@
+{
+  "tasks": [
+    {
+      "question_id": "1",
+      "text": [
+        "Suppose we flip two fair coins and roll one fair six-sided die. [10 points]",
+        "What is the conditional probability that the number of heads equals the number showing on the die, conditional on knowing that the die showed 2?"
+      ],
+      "student_solution": {
+        "steps": [
+          "P(A|B) = P(A∩B) / P(B)"
+        ],
+        "calculation": [
+          "P(A∩B) = 1/24",
+          "P(B) = 1/6",
+          "P(A|B) = (1/24) / (1/6) = 1/4"
+        ],
+        "result": "1/4",
+        "notes": [],
+        "source_pages": [
+          3
+        ]
+      }
+    },
+    {
+      "question_id": "2",
+      "text": [
+        "A website receives an average of 4 visitors every hour. [15 points]",
+        "a) What is the probability that up to 3 visitors are received during a 3-hour period?",
+        "b) What is the probability that below 3 and 5 visitors (inclusive) are received in one hour?"
+      ],
+      "student_solution": {
+        "steps": [
+          "λ = 4 * 3 = 12",
+          "P(K=0) = (λ^0 * e^-λ) / 0! = e^-12",
+          "P(K=1) = (λ^1 * e^-λ) / 1! = 12 * e^-12",
+          "P(K=2) = (λ^2 * e^-λ) / 2! = 72 * e^-12",
+          "P(K=3) = (λ^3 * e^-λ) / 3! = 288 * e^-12",
+          "P(K>3) = 1 - P(K=0) - P(K=1) - P(K=2) - P(K=3)",
+          "P(K=3) = (4^3 * e^-4) / 3! = 10.66 * e^-4",
+          "P(K=4) = (4^4 * e^-4) / 4! = 10.66 * e^-4",
+          "P(K=5) = (4^5 * e^-4) / 5! = 10.66 * e^-4",
+          "P(K=3) + P(K=4) + P(K=5) = 31.92 * e^-4"
+        ],
+        "calculation": [
+          "P(K=0) = e^-12",
+          "P(K=1) = 12 * e^-12",
+          "P(K=2) = 72 * e^-12",
+          "P(K=3) = 288 * e^-12",
+          "P(K>3) = 1 - 2.718^-12 - 12.2.718^-12 - 72.2.718^-12 - 288.2.718^-12",
+          "P(K=3) = 10.66 * e^-4",
+          "P(K=4) = 10.66 * e^-4",
+          "P(K=5) = 10.66 * e^-4",
+          "P(K=3) + P(K=4) + P(K=5) = 31.92 * e^-4"
+        ],
+        "result": "P(K>3) = 1 - 2.718^-12 - 12.2.718^-12 - 72.2.718^-12 - 288.2.718^-12",
+        "notes": [],
+        "source_pages": [
+          4
+        ]
+      }
+    },
+    {
+      "question_id": "3",
+      "text": [
+        "Consider the following joint probability distribution for rv X(rows) and Y(columns): [15 points]",
+        "Calculate the conditional probability P(Y=1|X=1)",
+        "Calculate the marginal probability distribution of X and Y.",
+        "Are X and Y independent? Justify your answer."
+      ],
+      "student_solution": {
+        "steps": [
+          "P(Y=1|X=1) = P(X=1,Y=1) / P(X=1)",
+          "P(X=1) = 1/12 + 1/18 = 5/36",
+          "P(X=2) = 1/6 + 1/4 + 1/9 = 19/36",
+          "P(X=3) = 1/5 + 2/15 = 1/3",
+          "P(Y=1) = 1/12 + 1/6 = 1/4",
+          "P(Y=2) = 1/9 + 1/5 = 14/45",
+          "P(Y=3) = 1/18 + 1/4 + 2/15 = 47/90",
+          "P(X=1,Y=1) = P(X=1) * P(Y=1)"
+        ],
+        "calculation": [
+          "P(Y=1|X=1) = (1/12) / (5/36) = 3/5",
+          "P(X=1) = 1/12 + 1/18 = 5/36",
+          "P(X=2) = 1/6 + 1/4 + 1/9 = 19/36",
+          "P(X=3) = 1/5 + 2/15 = 1/3",
+          "P(Y=1) = 1/12 + 1/6 = 1/4",
+          "P(Y=2) = 1/9 + 1/5 = 14/45",
+          "P(Y=3) = 1/18 + 1/4 + 2/15 = 47/90",
+          "P(X=1,Y=1) = 1/12 ≠ (5/36) * (1/4)"
+        ],
+        "result": "dependent",
+        "notes": [],
+        "source_pages": [
+          3
+        ]
+      }
+    },
+    {
+      "question_id": "4",
+      "text": [
+        "Consider the following joint pdf for two random variables X and Y: [15 points]",
+        "f(x,y) = k * e^-(x+y), x ≥ 0, y ≥ 0",
+        "Find the constant k so that the PDF is normalized.",
+        "Calculate the E[XY]."
+      ],
+      "student_solution": {
+        "steps": [
+          "∫∫ k * e^-(x+y) dx dy = 1",
+          "k * ∫ e^-x dx * ∫ e^-y dy = 1",
+          "k * 1 * 1 = 1",
+          "k = 1",
+          "E[XY] = ∫∫ x * y * e^-(x+y) dx dy"
+        ],
+        "calculation": [
+          "∫∫ k * e^-(x+y) dx dy = 1",
+          "k * ∫ e^-x dx * ∫ e^-y dy = 1",
+          "k * 1 * 1 = 1",
+          "k = 1",
+          "E[XY] = ∫∫ x * y * e^-(x+y) dx dy"
+        ],
+        "result": "",
+        "notes": [],
+        "source_pages": [
+          3
+        ]
+      }
+    },
+    {
+      "question_id": "5",
+      "text": [
+        "Given the following data for three variables, X(hours of screen time per day), Y (hours of physical activity per day). [15 points]",
+        "X = [3, 6, 6]",
+        "Y = [3, 6, 9]",
+        "Construct the covariance matrix of X and Y.",
+        "Calculate the correlation coefficient."
+      ],
+      "student_solution": {
+        "steps": [
+          "Var(X) = Σ(x - x̄)^2 / (n-1)",
+          "Var(Y) = Σ(y - ȳ)^2 / (n-1)",
+          "Cov(X,Y) = Σ(x - x̄)(y - ȳ) / (n-1)",
+          "r = Cov(X,Y) / √(Var(X) * Var(Y))"
+        ],
+        "calculation": [
+          "Var(X) = 2",
+          "Var(Y) = 6",
+          "Cov(X,Y) = 3",
+          "r = 3 / √(2 * 6) = 3 / √12 ≈ 0.866"
+        ],
+        "result": "0.866",
+        "notes": [],
+        "source_pages": [
+          5
+        ]
+      }
+    },
+    {
+      "question_id": "6",
+      "text": [
+        "The number X of calls to a telephone exchange during the busiest hour is Poisson(λ). During five days the following observations on X were made: 125, 82, 87, 99, 92. Compute a 95% confidence interval for λ. [15 points]"
+      ],
+      "student_solution": {
+        "steps": [
+          "x̄ = 94",
+          "SE = √(x̄ / n) = √(94 / 5) = 4.34",
+          "CI = x̄ ± 1.96 * SE"
+        ],
+        "calculation": [
+          "x̄ = 94",
+          "SE = √(94 / 5) = 4.34",
+          "CI = 94 ± 1.96 * 4.34 = 94 ± 8.52",
+          "{85.48, 102.52}"
+        ],
+        "result": "{85.48, 102.52}",
+        "notes": [],
+        "source_pages": [
+          4
+        ]
+      }
+    },
+    {
+      "question_id": "7",
+      "text": [
+        "A certain drug is to be rated either effective or ineffective. Suppose lab results indicate that 75% of the time the drug increases the lifespan of a patient by 5 years (effective) and 25% of the time the drug causes a complication which decreases the lifespan of a patient by 1 year (ineffective). As part of a study you administer the drug to 10000 patients. [15 points]",
+        "Find the standard error for the sampling distribution.",
+        "What is the probability that the lifespans of those in the study will be increased by an average of 3.55 years or below?"
+      ],
+      "student_solution": {
+        "steps": [
+          "E(X) = 5 * 0.75 + (-1) * 0.25 = 3.5",
+          "E(X^2) = 25 * 0.75 + 0.25 = 19",
+          "σ = √(E(X^2) - (E(X))^2) = √(19 - 3.5^2) = 6.75",
+          "SE = σ / √n = 6.75 / √12 = 4.724",
+          "z = (3.55 - 3.5) / 4.724 = 0.105",
+          "P(Z ≤ 0.105) = 0.542"
+        ],
+        "calculation": [
+          "E(X) = 5 * 0.75 + (-1) * 0.25 = 3.5",
+          "E(X^2) = 25 * 0.75 + 0.25 = 19",
+          "σ = √(19 - 3.5^2) = 6.75",
+          "SE = 6.75 / √12 = 4.724",
+          "z = (3.55 - 3.5) / 4.724 = 0.105",
+          "P(Z ≤ 0.105) = 0.542"
+        ],
+        "result": "0.542",
+        "notes": [],
+        "source_pages": [
+          5
+        ]
+      }
+    }
+  ]
+}
